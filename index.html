@@ -200,7 +200,7 @@
 
 <section class="card">
   <h2>1. Mitä oikeastaan tarkasteltiin?</h2>
-  <p>Lintua ei analysoitu vain karttaviivana. Jokainen GPS-hetki muutettiin pieneksi käyttäytymislauseen palaksi. Tällainen pala voi tarkoittaa esimerkiksi: “lintu on pysähtynyt, kaukana kotipaikan arviosta, aamuhämärässä”.</p>
+  <p>Lintua ei analysoitu vain karttaviivana. Jokainen GPS-hetki muutettiin pieneksi käyttäytymislauseen palaksi. Käyttäytymispala voi tarkoittaa esimerkiksi: “lintu on pysähtynyt, kaukana kotipaikan arviosta, aamuhämärässä”. Aika määriteltiin aikaleimasta tehtyinä karkeina aikaluokkina.</p>
   <div class="flow" aria-label="Analyysiputki">
     <div class="flow-step"><div class="kicker">Vaihe 1</div><h3>GPS-pisteet</h3><p>Missä lintu oli ja milloin mittaus tehtiin.</p></div>
     <div class="flow-step"><div class="kicker">Vaihe 2</div><h3>Tokenit</h3><p>Piste tiivistettiin käyttäytymistilaksi: liike, suunta, etäisyys ja aikaikkuna.</p></div>
@@ -208,7 +208,7 @@
     <div class="flow-step"><div class="kicker">Vaihe 4</div><h3>Malli</h3><p>Markov ja Transformer yrittivät arvata seuraavan tilan aiempien tilojen perusteella.</p></div>
     <div class="flow-step"><div class="kicker">Vaihe 5</div><h3>Yllätys</h3><p>Kun seuraava tila ei ollutkaan odotettu, se merkittiin rutiinikatkokseksi.</p></div>
   </div>
-  <div class="plain-explain"><strong>Konkreettinen ajatus:</strong> jos lintu on aamuhämärässä yleensä pitkään paikallaan, malli oppii tämän. Jos sama lintu alkaakin juuri siinä tilanteessa liikkua, se näkyy yllätyksenä.</div>
+  <div class="plain-explain"><strong>Konkreettinen ajatus:</strong> jos lintu on aamuhämäräksi luokitellulla ajankohdalla yleensä pitkään paikallaan, malli oppii tämän. Jos sama lintu alkaakin juuri siinä tilanteessa liikkua, se näkyy yllätyksenä.</div>
 </section>
 
 <section class="card">
