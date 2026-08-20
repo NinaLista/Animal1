@@ -209,7 +209,14 @@ Tunnistetaan yksilön käyttäytymisen baseline, rutiini ja rutiinikatkokset. Ja
     <div class="flow-step"><div class="kicker">Vaihe 4</div><h3>Malli</h3><p>Markov ja Transformer yrittivät arvata seuraavan tilan aiempien tilojen perusteella.</p></div>
     <div class="flow-step"><div class="kicker">Vaihe 5</div><h3>Yllätys</h3><p>Kun seuraava tila ei ollutkaan odotettu, se merkittiin rutiinikatkokseksi.</p></div>
   </div>
-  <div class="plain-explain"><strong>Konkreettinen ajatus:</strong> jos lintu on aamuhämäräksi luokitellulla ajankohdalla yleensä pitkään paikallaan, malli oppii tämän. Jos sama lintu alkaakin juuri siinä tilanteessa liikkua, se näkyy yllätyksenä.</div>
+  <div class="plain-explain"><strong>Konkreettinen ajatus:</strong> 
+
+1. DAY / TWILIGHT / NIGHT
+2. havaittiin, että TWILIGHT eroaa
+3. tarkistettiin: tuleeko ero aamusta vai illasta?
+4. tulos: ero tuli lähes kokonaan MORNING twilightista
+
+Lintu oli aamuhämäräksi luokitellulla ajankohdalla yleensä pitkään paikallaan,joten malli oppi sen. Kun lintu alkoikin juuri siinä aikaslotissa liikkua, se näkyi yllätyksenä. </div>
 </section>
 
 <section class="card">
